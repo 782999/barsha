@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Music Website</title>
+    <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Music Website</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#music">Music</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="music">
+            <h1 style="text-align:center;color:rgb(10, 10, 47);">Barsha's Music🎵 </h1>
+            <ul>
+                <section class="music">
+                <div class="music-box">
+                    <div class="music-content">
+                    <img src="C:\Users\saman\OneDrive\Desktop\frontend\sun.jpg">
+                </div>
+                <li>
+                    <h3>Sun sathiya</h3>
+                    <audio controls>
+                        <source src="D:\student\audio\Sun Saathiya - ABCD 2 (128 kbps).mp3" type="audio/mpeg">
+                        <button id="playButton">play sound</button>
+                        Your browser does not support the audio element.
+                    </audio>
+                    </li>
+                    </div>
+    
+
+
+                <div>
+                <div class="music-box">
+                    <div class="music-content">
+                    <img src="C:\Users\saman\OneDrive\Desktop\frontend\be.jpg">
+                </div>
+                <li>
+                    <h3>Bezubaan kab se </h3>
+                    <audio controls>
+                        <source src="D:\student\audio\Bezubaan Phir Se Reprise - ABCD 2 (128 kbps).mp3" type="audio/mpeg">
+                        <button id="playButton">play sound</button>
+                        Your browser does not support the audio element.
+                    </audio>
+                </li>
+                </div>    
+            </ul>
+        </section>
+    </section>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>This is a brief description about me and my music journey.</p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>If you want to get in touch, please email me at <a href="mailto:your-email@example.com">your-email@example.com</a>.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Barsha's music Website</p>
+    </footer>
+    <script>
+        const audio = document.getElementById('audio');
+        const playButton = document.getElementById('playButton');
+
+        playButton.addEventListener('click', () => {
+            audio.play();
+        });
+
+</body>
+</html>
